@@ -1,0 +1,12 @@
+How to calculate volume of tire:
+-Open the python console - view -> Panels -> Python Console
+-Run: target_object=App.ActiveDocument.getObjectsByLabel("mold-result")[0]
+-Note: "mold-result" is the label of the body that contains the solid to be measured
+-Run: target_object.Shape.Volume
+-The volume will be output in mm^3
+-The result in this case is 32821.31800948133 (You can convert it to 2.18 Tablespoons)
+-Other commands:
+target_object.Shape.Area
+target_object.Shape.CenterOfMass
+
+This info is from: https://www.xsim.info/articles/FreeCAD/en-US/HowTo/Calculate-volume-area-and-center-of-mass.html
